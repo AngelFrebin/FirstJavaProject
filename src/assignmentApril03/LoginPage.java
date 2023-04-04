@@ -19,13 +19,13 @@ public class LoginPage {
 				System.out.println("You are logged in to the application");
 				break;
 					}
-			else if(counter<=3 && enteredUserId.equals(actualUserId) && enteredPassword != actualPassword) {
+			else if(counter<=3 && enteredUserId.equals(actualUserId) && enteredPassword.equalsIgnoreCase(actualPassword)) {
 				System.out.println("Entered password is incorrect try again");
 			}
-			else if(counter<=3 && enteredUserId != actualUserId && enteredPassword.equals(actualPassword)) {
+			else if(counter<=3 && enteredUserId.equalsIgnoreCase(actualUserId) && enteredPassword.equals(actualPassword)) {
 				System.out.println("Entered userId is incorrect try again");	
 			}
-			else if (counter<=3 && enteredUserId != actualUserId && enteredPassword != actualPassword) {
+			else if (counter<=3 && enteredUserId.equalsIgnoreCase(actualUserId) && enteredPassword.equalsIgnoreCase(actualPassword)) {
 				System.out.println("Incorrect userId and Password");
 			}
 			else {

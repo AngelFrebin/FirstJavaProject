@@ -9,7 +9,7 @@ void addingChocolates() {
 	for(int counter=1;counter<=8;counter++) {
 		currentChocolates = actualChocolates + counter*5;
 		if(counter<7) {
-			System.out.println("keep adding 5 chocolates to box");
+			System.out.println("keep adding 5 chocolates to box. chocolates in the box " + currentChocolates);
 		}
 		else if(counter== 7){
 			System.out.println("Chocolates in the box is " + currentChocolates);

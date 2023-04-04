@@ -3,7 +3,6 @@ package loopsDemo;
 public class LoopsExample {
 
 	int number;
-	int finalNumber;
 	int result;
 	
 	void printMultiples() {

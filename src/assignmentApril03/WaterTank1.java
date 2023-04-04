@@ -3,17 +3,18 @@ package assignmentApril03;
 public class WaterTank1 {
 	int capacityOfWaterTank = 100;
 	int capacityOfBucket    = 10;
+	int initialCapacity     = 10;
 	int waterFilledInWaterTank;
 	void fillingWaterTankUsingBucket() {
-		for(int counter=1;
-				counter<=10;
+		for(int counter=1; ;
 				counter++) {
-			waterFilledInWaterTank = counter*10;
-			if (counter<10) {
+			waterFilledInWaterTank = initialCapacity + counter*10;
+			if (waterFilledInWaterTank<=capacityOfWaterTank) {
 				System.out.println("water getting filled in to watertank is " + waterFilledInWaterTank +" liters");		
 			}
 			else {
-				System.out.println("water tank capacity reached, stop filling to prevent overflow. water in watertank is " + waterFilledInWaterTank + " liters" );
+				System.out.println("water tank capacity reached, stop filling to prevent overflow.");
+				break;
 			}
 
 		}
