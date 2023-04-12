@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class PhoneBrands {
 	String[] samsung = { "s20", "s21", "flip3", "fold3" };
-	String[] google = { "googlepixel6", "googlepixel6pro", "googlepixelpro", "googlepixel5" };
-	String[] iphone = { "iphone12", "iphone12mini", "iphone11", "iphone11pro" };
+	String[] google = { "google pixel 6", "google pixel 6 pro", "google pixel pro", "google pixel 5" };
+	String[] iphone = { "iphone 12", "iphone 12 mini", "iphone 11", "iphone 11 pro" };
 	Scanner sc = new Scanner(System.in);
 
 	void findPhoneBrand() {
@@ -33,7 +33,7 @@ public class PhoneBrands {
 			System.out.println("This brand is not available");
 		}
 		System.out.println("Enter the product name");
-		String productName = sc.next();
+		String productName = sc.nextLine();
 		if(brandName.equals("samsung")) {
 		for (int i = 0; i < samsung.length; i++) {
 			if (samsung[i].equals(productName)) {
